@@ -1,0 +1,24 @@
+@mixin ma-pa-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+}
+
+@mixin display-flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+@mixin display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
