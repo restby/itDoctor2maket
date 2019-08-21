@@ -1,0 +1,22 @@
+body {
+  @include ma-pa-reset;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $text-color;
+  background-color: $text-color;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
