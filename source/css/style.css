@@ -352,6 +352,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #212121;
+  letter-spacing: 0.05em;
   background-color: grey;
   position: relative; }
 
@@ -363,9 +364,94 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.main-header {
+  background-image: url("../../img/bg/header-bg.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative; }
+
 .menu-bar {
   background: #ffffff;
   padding: 20px 0; }
+
+.header-content {
+  min-height: 651px;
+  text-align: center;
+  padding-top: 182px; }
+
+.header-content__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+  font-family: "Open Sans Semibold", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff; }
+
+.header-content__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 108px;
+  font-size: 22px;
+  color: #ffffff; }
+
+.header-content__link {
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid #ffffff;
+  min-width: 220px;
+  min-height: 70px;
+  padding-top: 21px;
+  margin-right: 25px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .header-content__link:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00897b;
+    border: 3px solid #00897b; }
+
+.main-header__btn {
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  width: 23px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .main-header__btn:hover {
+    -webkit-transform: translateX(-100%) scale(1.6);
+            transform: translateX(-100%) scale(1.6); }
+  .main-header__btn::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 14px;
+    height: 4px;
+    background-color: #ffffff; }
+  .main-header__btn::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 14px;
+    height: 4px;
+    background-color: #ffffff; }
 
 .logo__link:hover {
   text-decoration: none; }
@@ -383,15 +469,76 @@ img {
 .navigation__link {
   font-size: 20px;
   color: #212121;
-  padding-right: 30px; }
+  padding-right: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .navigation__link:hover {
     text-decoration: none;
     color: #00897b; }
 
 .btn-search {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .btn-search:hover svg {
     fill: #00897b; }
+
+.section__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #212121; }
+
+.section__text {
+  margin: 0;
+  padding: 0; }
+
+.about {
+  background-color: #ffffff;
+  padding-top: 125px;
+  padding-bottom: 110px;
+  text-align: center; }
+
+.about__text {
+  margin-bottom: 110px; }
+
+.about__item-title {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 26px;
+  font-family: "Open Sans Semibold", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 600; }
+  .about__item-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+
+.about__col:nth-child(1) .about__item-title::before {
+  background-image: url("../../img/pic/about-item1.png"); }
+
+.about__col:nth-child(2) .about__item-title::before {
+  width: 70px;
+  height: 70px;
+  background-image: url("../../img/pic/about-item2.png"); }
+
+.about__col:nth-child(3) .about__item-title::before {
+  width: 63px;
+  height: 63px;
+  background-image: url("../../img/pic/about-item3.png"); }
 
 /*# sourceMappingURL=style.css.map */

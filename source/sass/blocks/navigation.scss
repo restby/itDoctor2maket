@@ -5,6 +5,7 @@
   font-size: 20px;
   color: $text-color;
   padding-right: 30px;
+  transition: 0.3s;
     &:hover {
       @include link-reset;
       color: $active-color;
@@ -13,6 +14,7 @@
 .btn-search {
   border: none;
   background-color: transparent;
+  transition: 0.3s;
   &:hover svg {
     fill: $active-color;
   }
