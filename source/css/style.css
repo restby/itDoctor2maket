@@ -367,6 +367,7 @@ img {
 .button {
   margin: 0;
   padding: 0;
+  min-height: 55px;
   background-color: #00897b;
   border: 3px solid #00897b;
   font-family: "Open Sans Semibold", "Arial", sans-serif;
@@ -625,17 +626,80 @@ img {
   background-color: #ffffff;
   text-align: center; }
 
-.portfolio__title {
+.portfolio__text {
   margin-bottom: 98px; }
 
-.tabs__list {
+.portfolio__item-title,
+.portfolio__item-text {
+  display: none; }
+
+.portfolio__wrap {
+  margin-bottom: 25px;
+  position: relative; }
+  .portfolio__wrap::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; }
+  .portfolio__wrap:hover::before {
+    background-color: rgba(0, 0, 0, 0.6); }
+  .portfolio__wrap:hover .portfolio__item-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Semibold", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+  .portfolio__wrap:hover .portfolio__item-text {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Semibold", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px); }
+
+.portfolio__tabs-list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 112px; }
 
-.tubs__btn:hover {
+.portfolio__tabs-item {
+  margin-right: 20px; }
+
+.portfolio__tabs-item:last-child {
+  margin-right: 0; }
+
+.portfolio__tabs-btn {
+  display: block;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: transparent;
   border: 3px solid #00897b;
-  color: #212121; }
+  color: #212121;
+  padding-top: 12px; }
+  .portfolio__tabs-btn:hover {
+    background-color: #00897b;
+    border: 3px solid #00897b;
+    color: #ffffff; }
+
+.portfolio__btn {
+  min-width: 220px;
+  min-height: 70px; }
 
 /*# sourceMappingURL=style.css.map */

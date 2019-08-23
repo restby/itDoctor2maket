@@ -1,5 +1,6 @@
 .button {
   @include ma-pa-reset;
+  min-height: 55px;
   background-color: $active-color;
   border: 3px solid $active-color;
   font-family: "Open Sans Semibold", "Arial", sans-serif;
