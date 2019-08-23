@@ -32,26 +32,19 @@
   color: $white-color;
 }
 
-.header-content__link {
-  @include link-reset;
-  display: inline-block;
-  border: 3px solid $white-color;
+.header-content__btn {
   min-width: 220px;
   min-height: 70px;
-  padding-top: 21px;
-  margin-right: 25px;
-  font-family: "Open Sans Regular", "Arial", sans-serif;
-  font-size: 22px;
-  line-height: 22px;
-  color: $white-color;
-  text-transform: uppercase;
-  text-align: center;
-  transition: 0.3s;
+
+  &:first-child {
+    margin-right: 25px;
+  }
+
   &:hover {
     @include link-reset;
     color: $white-color;
-    background-color: $active-color;
-    border: 3px solid $active-color;
+    border: 3px solid $white-color;
+    background-color: transparent;
   }
 }
 
